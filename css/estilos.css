@@ -4,6 +4,8 @@ Definir los selectores universal.
 
 */
 
+/*codigo cor: #2d83be*/
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /*Reset del HTML*/
 *{
@@ -14,61 +16,65 @@ Definir los selectores universal.
 
 body{
     font-family: "roboto",serif;
-    background-color: rgb(235, 235, 221);
+    padding: 7px;
+
     
 }
 
-h2{
-    font-family: 'Playwrite VN', sans-serif;
-    font-size: 3rem;
+.logoTxt{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300;
     color: black;
-    margin-bottom: 30px ;
+    text-transform: uppercase;
+}
+
+.t4bContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 300px;
+    background-color: #2d83be;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+.t4bContainerIndex{
+    height: 75vh;
+    width: 100%;
+    margin-top: 5px;
+    h1{
+        font-family: "roboto",serif;
+        color: rgb(250, 250, 250);
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    /*
+    background-image: url(../assets/img/fondo_principal_index.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    */
+}
+
+    
+.mainTitle{
+   
+    font-size: 30px;
+    font-weight: 300;
 
 }
 
-h1{
-    font-family: 'Playwrite VN', sans-serif;
-    font-size: 3rem;
-    color: black;
-    margin-top: 20px;
-    margin-bottom: 40px ;
-    text-align: center;
+.mainDescription{    
+    font-size: 18px;
+    line-height: 1.3;
+
+
 }
 
-
-
-/* Estilo navegacion - header y footer */
-
-header{
-    /*Nvagción fija el top*/
-    display: flex;
-flex-direction: row;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background-color: cadetblue;
-    height: 150px;
-    li{
-        /*esto luego se reemplaza con flexbox*/
-        list-style: none;
-       
-    }
-    li a{
-        border: solid 5px white;
-        border-radius: 5px;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    ul{
-        display: flex;
-        text-decoration: none;
-    }
-}
-
-footer{
+footer{    
     div{
-        display: inline-block;
+        display: flexbox;
     }
 
     i{
@@ -81,50 +87,59 @@ footer{
 
 }
 
-/*Whatsapp contacto*/
-.fa-whatsapp{
-    color: #25d366;    
+/*Redes sociales*/
+.T4brSociales{
+    text-align: center;
+    color: #25d366;
+    margin-bottom:50px;
+    margin-left: 10px;
+}
+/*whats app style*/
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.container-whapp .fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
-    right: 20px;
+    width: 50px;
+    height: 50px;
     bottom: 30px;
-    font-size: 5rem;
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    font-size: 30px;
+    z-index: 5;
+    
+}
+.container-whapp{
+    a:hover{
+        text-decoration: underline;
+        }
+    }
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
 }
 
 /*Logo*/
 .logo{
-    width: 95px;
-    height: 95px;
-    border-color: #25d366;  
-    border: 2px solid black;
+    width: 90px;
+    height: 90px;
 
 }
-
-ul a{
-    list-style-type: none;
-    text-decoration: none;
-}
-
-li{
-    text-decoration: none;
-}
-
 /*titulo de la paginas*/
-.titulo{
-    text-align: center;
-
-}
 
 
-/* main idex */
 
+/* main index */
 .seccionPrincipalIndex{
     display:block;
     color:rgb(255, 255, 255);
-    background-image: url("../assets/img/grafico.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    width: 100%;
     margin-top: 10px;
     a{
       margin-top:20px;
@@ -136,8 +151,6 @@ li{
       border-radius: 5px;
     }
   }
-
-
   .seccionSobreSistemaIndex{
     div{
         display: inline-block;
@@ -149,7 +162,7 @@ li{
         height: 240px;
         
     }
-
+    
     h1{
         text-align: center;
     }
@@ -171,9 +184,13 @@ li{
   
   /*Seccion de stratgias*/
 
-  .seccionEstrategiasIndex{
+.carousel-item{
+    height: 90vh;
+    img{
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+    }
 
-  }
-
-
+}
 
