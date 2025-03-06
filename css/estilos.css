@@ -20,6 +20,14 @@ body{
 
     
 }
+.t4bContainerComF{
+    h3{
+        color: #2d83be;
+    }
+    div{
+        border-left: solid 2px #2d83be;
+    }
+}
 
 .logoTxt{
     font-family: 'Times New Roman', Times, serif;
@@ -49,12 +57,6 @@ body{
         text-align: left;
         font-size: 2.5rem;
     }
-    /*
-    background-image: url(../assets/img/fondo_principal_index.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    */
 }
 
     
@@ -71,7 +73,7 @@ body{
 
 
 }
-
+/*
 footer{    
     div{
         display: flexbox;
@@ -87,17 +89,25 @@ footer{
 
 }
 
+*/
+
 /*Redes sociales*/
 .T4brSociales{
     text-align: center;
-    color: #25d366;
     margin-bottom:50px;
     margin-left: 10px;
+    
 }
 /*whats app style*/
 
 .shadow {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+.t4fbcontainerAyuda{
+   ul{
+    text-decoration: none;
+   }
 }
 
 .container-whapp .fab {
@@ -107,8 +117,8 @@ footer{
     position: fixed;
     width: 50px;
     height: 50px;
-    bottom: 30px;
-    right: 20px;
+    bottom: 15px;
+    right: 30px;
     background-color: #25d366;
     color: #FFF;
     border-radius: 50px;
@@ -132,9 +142,6 @@ footer{
     height: 90px;
 
 }
-/*titulo de la paginas*/
-
-
 
 /* main index */
 .seccionPrincipalIndex{
@@ -150,40 +157,9 @@ footer{
       padding:8px;
       border-radius: 5px;
     }
-  }
-  .seccionSobreSistemaIndex{
-    div{
-        display: inline-block;
-        overflow: hidden;
-        border: 2px solid black;
-        padding: 5px;
-        margin: 5px 0 0 5px;
-        width: 300px;
-        height: 240px;
-        
-    }
-    
-    h1{
-        text-align: center;
-    }
-  }
+}  
 
-  .seccionComentariosIndex{
-    display: flexbox;
-    
-    img{
-        width:100px;
-        height: 100px;
-    }
-    div{
-        display: inline-block;
-
-    }
-  }
-
-  
-  /*Seccion de stratgias*/
-
+/*Seccion de stratgias*/
 .carousel-item{
     height: 90vh;
     img{
@@ -191,6 +167,53 @@ footer{
         width: 80%;
         object-fit: cover;
     }
+}
 
+/*Sesión comentarios*/
+
+.sesionComentsTitle{
+    text-align: center;
+    height: 400px;
+    padding: 5px;
+    margin-top: 10px; 
+
+    h3{
+        padding-bottom: 5px;
+    }
+}
+
+.cardComents{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3sease;
+    img{
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+/* style copyrigth */
+.TfBCopyrigth{
+    text-align: center;
+    color: #2d83be;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 85px;
+    border-top: solid 1px rgb(201, 198, 198);
+    text-align: center;
+    p{
+        padding-top:45px;
+        
+    }
+
+}
+
+.T4Bfooter{
+    border: solid 1px red;
 }
 
