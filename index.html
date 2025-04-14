@@ -14,14 +14,23 @@
     <body> 
         <header class="position-sticky top-0 z-3">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a  class="navbar-brand" href="./index.html">
-                        <img style="width: 90px; height: 90px;" src="./assets/img/logo.png" alt="Logo, simblo de un grafico de velas de traging azul.">
-                    </a>
-                    <div class="logoTxt">T4B | Trading for Business</div>
+                <div class="container-fluid">                
+                    <div class="t4b-logo-container">
+                        <div class="logo-img" >
+                            <a href="./index.html">
+                                <img src="./assets/img/logo.png" alt="Logo, simbolo de un grafico de velas de traging azul.">                        
+                            </a>
+                        </div>
+
+                        <div class="logoTxt">
+                            <p>T4B | Trading for Business</p>
+                        </div>                     
+                    </div>
+                    
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
@@ -40,19 +49,28 @@
                                 <li class="nav-item">
                                     <a class="nav-link" aria-current="page" href="./pages/sucursales.html">Sucursales</a>
                                 </li>
-                            </ul>                            
-                        </div>                        
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
         <!--Sesión principal-->
         <main>
-            <section class="container-fluid p-5 bg-primary text-white text-center">
-                <h1>T4B - Trading for business</h1>
-                <p>Servicios de trading y arbitraje para apalancar tu negocio!</p> 
-            </section> 
- 
+            <section class="container-fluid t4b-container text-white text-center">
+                <div>
+                    <h1>T4B - Trading for business</h1>
+                    <p>Servicios de trading y arbitraje para apalancar tu negocio!</p>                    
+                </div>
+            </section>
+
+            <section class="t4bSesionImgTrading ">
+                <div class="container">
+                    <h2>Renta extra para su negocio</h2>
+                    <p>Sin prestamo, sin comisiones sin letras chicas.</p>
+                    <a class="t4bBoton" href="./pages/software.html">Más información</a>
+                </div>
+            </section>  
             
 
             <section>                 
@@ -78,25 +96,8 @@
                         </div>                
                     </div>
                 </div>
-            </section>
+            </section>          
             
-            <section class="container-fluid mt-2"> 
-                <div class="row t4bSessionAppTrading">
-                    <div class="t4bSesionImgApp col-md-6">                        
-                        <p>Acompañe las operaciones en tiempo real através de nuestra APP.</p>
-                        <h2 >Descarga ahora!</h2>
-                        <a class="t4bBoton" href="./pages/nosotros.html">DESCARGAR</a>
-                        
-                    </div>
-
-                    <div class="t4bSesionImgTrading col-md-6">                        
-                        <p>Texto aqui</p>
-                        <h2>Titulo del texto</h2>
-                        <a class="t4bBoton" href="./pages/software.html">VER</a>
-                        
-                    </div>
-                </div>
-            </section>
 
             <section class="sessionOpnionClientes container-fluid">
                 <h3>Opnión de nuestros clientes</h3>
@@ -115,70 +116,94 @@
                         <h5>Amanda</h5>
                         <p>Muy buena empresa para apalancar su negocio, lo recomiendo.</p>
                 </div>
-
                 <div class="cardComents">
                     <img src="./assets/img/cliente3.jpeg" alt="Comentario cliente">
                         <h5>Vanessa</h5>
                         <p>Muy buena empresa para apalancar su negocio, super recomiendo.</p>
                 </div>
-            </section>           
+            </section>
+            
+            <section class="container">
+                <h2 class="text-center">Descarga ya y disfruta de todos los beneficios.</h2>
+                <div class="row justify-content-center">
+                    <div class="col">			
+                        <a href="https://play.google.com/" target="_blank">
+                            <span>
+                                <img loading="lazy" decoding="async" width="172" height="52" src="./assets/img/disponivel-google-play-badge.webp" alt="disponível google play" title="disponivel-google-play-badge" class="">
+                            </span>
+                        </a>
+                    </div>
+    
+                    <div class="col">			
+                        <a href="https://apps.apple.com/" target="_blank">                            
+                            <img loading="lazy" decoding="async" width="172" height="52" src="./assets/img/disponivel-na-app-store-botao.webp" alt="disponível apple estore" title="disponivel-apple-estore-badge" class="">                            
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <h3>¿Necesitás Ayuda?</h3>
-                    <ul>
-                        <li><a href="index.html">Canales de soporte</a></li>
-                        <li><a href="./pages/productos.html">Tutoriales</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>                    
-                    </ul>
+        <footer>
+            <div class="container-fluid justify-content-center ">
+                <div class="row ">
+                    <div class="col-md-3">
+                        <h3>Contacto</h3>
+                        <p>Teléfono:+551191234-5678</p>
+                        <p>Dirección: AV Brasil 200</p>
+                        <p>Correo:soporte@t4b.com</p>
+                    </div>   
+    
+                    <div class="col-md-3">
+                        <h3>¿Necesitás Ayuda?</h3>
+                        <ul>
+                            <li><a href="index.html">Canales de soporte</a></li>
+                            <li><a href="./pages/productos.html">Tutoriales</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>                    
+                        </ul>
+                    </div>
+    
+                    <div  class="col-md-3">
+                        <h2>Nuestras redes sociales</h2>
+
+                        <div class="row T4bSociales">
+                            <div class="col">
+                                <a href="https://www.facebook.com/">
+                                    <i class="fa-brands fa-facebook"></i>  
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.instagram.com/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </div>
+    
+                            <div class="col">
+                                <a href="https://www.linkedin.com/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>                              
+                    </div>              
+    
+                    <div class="col-md-3">
+                        <h3 class="text-center" >Trading Cetificate</h3>
+                        <img src="./assets/img/SVG/icones/certificate-trading.svg" alt="Imagen de un titulo de ">
+                    </div>
                 </div>
-
-                <div  class="col-md-3 t4brSociales">
-                    <h2>Nuestras redes sociales</h2>
-                    <div>
-                        <div>
-                            <a href="https://www.facebook.com/">
-                            <i class="fa-brands fa-facebook"></i>  
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </div>
-
-                        <div>
-                            <a href="https://www.linkedin.com/">
-                                <i class="fa-brands fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>                              
-                </div>
-
-                <div class="col-md-3" >
-                    <h3>Contacto</h3>
-                    <p>Teléfono:+551191234-5678</p>
-                    <p>Dirección: AV Brasil 200</p>
-                    <p>Correo:soporte@t4b.com</p>
-                </div>
-
-                <div class="col-md-3" >
-                    <h3>Trading Cetificate</h3>
-                    <img src="./assets/img/" alt="">
-                </div>
-
+                
+                
                 <div class="container-whapp">
                     <a href="https://wa.link" target="_blank">
                         <i class="fab  fa-whatsapp"></i>
                     </a>
                 </div>
                 
-                <div class="TfBCopyrigth" >
+                <div class="T4BCopyrigth" >
                     <p>© Copyright 2025 T4B - Trading for Business. Todos los derechos reservados.</p>
                 </div>
-            </div>        
+
+            </div>
+            
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
