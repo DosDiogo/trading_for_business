@@ -107,14 +107,6 @@ body{
     place-content: center;
     color: rgb(238, 217, 217);
 
-    .opacity-div-txt{
-        opacity: 0.33;
-        height: 300px;        
-        border: solid 10px white;       
-        background-color: #ffffff;
-        opacity: 0.3;
-    }
-
     .t4bBoton{
         padding: 10px;
         text-decoration: none;
@@ -250,7 +242,7 @@ body{
 .main-layout{
     /*display: block;*/    
     section{
-        margin-top: 20px;
+        /*margin-top: 20px;*/
         padding-top: 40px;
         padding-bottom: 25px;
     }
@@ -329,10 +321,12 @@ body{
 
 /*Nosotros Page - Sesión CEO T4B*/
 .t4b-sesionCeo{
+    border: solid 1px ;
     p{
         text-align: justify;               
-        line-height: 1.5;
+        line-height: 1.0;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
 
     }
     
@@ -341,6 +335,15 @@ body{
         
         
         
+    }
+
+    h6{
+        font-family: din-214, sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: 300;
+        margin-top: 0;
+
     }
 }
 
@@ -497,10 +500,11 @@ footer {
 
         .t4b-cols-grid{            
         padding: 1.5rem;
-        background-color: rgb(88 28 135 / 0.2);
+        background-color: #0088f9;
         border-radius: 1rem;
 
         .t4b-cols-num{
+            color: #0d2558;
             font-size: 1.875rem;
             line-height: 2.25rem;
             font-weight: 700;        
