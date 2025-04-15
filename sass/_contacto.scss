@@ -1,0 +1,23 @@
+/* Page contacto*/
+
+.t4bSesionContacto{
+    label{
+        padding-top: 8px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #0d2558;
+        
+    }
+    input, select, textarea, hr{
+        border: solid 1px #0088f9;
+    }
+    .botonFormContacto{
+        margin-top:10px;
+    }
+    
+    .t4bBackGroundForm{
+        background-image: url(../assets/img/grafico.jpg);
+        border-radius: 8px;
+    }
+    
+}

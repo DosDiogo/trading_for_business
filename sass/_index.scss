@@ -1,0 +1,147 @@
+/*Page index*/
+/*Background Sesion T4B after nav */
+
+.t4b-container{
+    height: 150px;
+    background-image: linear-gradient(to right top, #0088f9, #6f9bfa, #9daffb, #c0c5fc, #deddfd, #deddfd, #deddfd, #deddfd, #c0c5fc, #9daffb, #6f9bfa, #0088f9);
+    div{
+        padding-top: 50px;
+        color: #0d2558;
+    }
+    p{
+        font-size: 1rem;
+        
+    }
+
+}
+/*Sesión cómo funciona*/
+.t4bComoFunciona{
+    h3{
+        color: #2d83be;
+    }
+    div{
+        border-left: solid 2px #0088f9;
+    }
+}
+
+/*Index pag - sesión img*/
+.t4bSesionImgTrading{
+    height:75vh;
+    text-align: center;  
+    background-image: url(../assets/img/grafico.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    place-content: center;
+    color: rgb(238, 217, 217);
+
+    .t4bBoton{
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;
+        color: #f9f9f9;
+        border-radius: 7px;
+        border: 2px solid white;
+        &:hover{       
+            background-color: #0088f9;
+            border: initial;
+            border: 2px solid white;
+        
+        }      
+    
+    }
+
+    h2{
+        text-transform: uppercase;
+        font-weight: bold; 
+        
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .t4bSesionImgTrading {
+        height: 60vh;
+    }
+}
+
+
+/*estilos Logo index*/
+.t4b-logo-container{
+    display: flex;
+    flex-direction: row;
+    img{
+        width: 80px; 
+        height: 80px;
+    
+    }
+
+    .logoTxt{
+        p{
+            color: #0d2558;
+            font-size: 1.5rem;
+            padding-top: 21px;
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .t4b-logo-container .logo-img{
+        img{
+            width: 70px; 
+            height: 70px;             
+            
+        }
+     
+    }
+    .t4b-logo-container .logoTxt{
+        padding-top: 0;
+        p{
+            font-size: 0.7rem;
+        }
+    }
+
+    .t4b-logo-container{
+        flex-direction: row;
+        
+    }   
+}
+
+
+/*Sesión opniones de los clientes*/
+.sessionOpnionClientes{
+    padding: 10px;
+    text-align: center;
+    div{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: solid 1px #2d83be;
+        border-radius: 10px;
+        transition: all 0.8s ease;    
+        display: inline-block;
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        background-color: #f9f9f9;
+        width: 250px;
+        height: 250px;
+        &:hover{
+            transform: translate(-15px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+        }
+        img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }      
+
+    }   
+    
+}
+
