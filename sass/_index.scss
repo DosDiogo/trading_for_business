@@ -1,61 +1,132 @@
+@import "variables";
+
 /*Page index*/
+
+/* estilos Navegación Index*/
+
+.t4b-navbar{    
+    background-color:#fdfbfb;
+    
+    li{
+        margin: 1px;
+    }
+    
+    .t4b-anclaNavbar{        
+        display: block;
+        padding: 9px;
+        font-size: 15px;
+        font-weight:bold;
+        color: #0d2558;    
+        text-decoration: none;
+        background: none;
+        &:hover{
+            background-color:#cecfcf;
+            transition: background-color 0.8s ease-out;
+        }  
+        
+        
+        
+    }
+}
+
+
 /*Background Sesion T4B after nav */
 
 .t4b-container{
-    height: 150px;
-    background-image: linear-gradient(to right top, #0088f9, #6f9bfa, #9daffb, #c0c5fc, #deddfd, #deddfd, #deddfd, #deddfd, #c0c5fc, #9daffb, #6f9bfa, #0088f9);
+    border-top: 1px solid #0088f9;
+    height: 300px;
     div{
         padding-top: 50px;
         color: #0d2558;
+        h1{
+            color: transparent;
+            font-weight: 700;
+            font-size: 3.75rem;
+            line-height: 2.5rem;
+            padding-bottom: 1.3rem;
+            background-clip: text;
+            background-image: linear-gradient(to right top, #051937, #0c3262, #114d92, #1069c4, #0088f9);    
+    
+        }
+    
     }
     p{
-        font-size: 1rem;
+        color: #0d2558;
+        font-size: 1.40rem;
+        line-height: 1.75rem;
+        padding-bottom: 2rem;
+        margin-top: 1rem;  
         
-    }
+    }   
 
 }
+
+
+@media only screen and (max-width: 600px) {
+    .t4b-container div h1 {      
+            font-size: 3rem;
+            line-height: 1;        
+    }
+    p{
+        
+    }
+}
+
+
+
 /*Sesión cómo funciona*/
 .t4bComoFunciona{
     h3{
-        color: #2d83be;
+        color: $border-bg-title;
     }
     div{
-        border-left: solid 2px #0088f9;
+        border-left: solid 2px $border-bg-title;
+        height: 160px;
     }
 }
 
 /*Index pag - sesión img*/
 .t4bSesionImgTrading{
     height:75vh;
-    text-align: center;  
+    text-align: center;
+    background: 100%;  
     background-image: url(../assets/img/grafico.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     place-content: center;
     color: rgb(238, 217, 217);
-
-    .t4bBoton{
-        padding: 10px;
-        text-decoration: none;
-        display: inline-block;
-        color: #f9f9f9;
-        border-radius: 7px;
-        border: 2px solid white;
-        &:hover{       
-            background-color: #0088f9;
-            border: initial;
-            border: 2px solid white;
-        
-        }      
-    
+    font-weight: bold;
+    div{
+        margin-top: 100px;
     }
 
     h2{
         text-transform: uppercase;
-        font-weight: bold; 
+        font-weight: bold;
+        font-size: 2.5rem; 
         
     }
+
+    .t4bBoton{
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        display: inline-block;    
+        border-radius: 7px;
+        border: 2px solid white;
+        color: white;
+        a{
+            text-decoration: none;
+            color: #0d2558;
+            
+        }
+        &:hover{       
+            background-color: #0088f9;
+            border: 2px solid white;             
+        
+        }
+    }   
     
 }
 
@@ -118,6 +189,9 @@
 .sessionOpnionClientes{
     padding: 10px;
     text-align: center;
+    h3{
+        color: $titulos-h1-p;
+    }
     div{
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         border: solid 1px #2d83be;
@@ -144,4 +218,38 @@
     }   
     
 }
+
+/*Sesión app index*/
+.t4b-descargaApp{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div{
+        padding: 5px;
+        
+    }
+    img:hover{
+        border: 2px solid #0088f9;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 800px) {
+    .t4b-descargaApp {
+      flex-direction: column;
+      div{
+        padding: 2px;
+        text-align: center;
+
+      }
+      a:hover{
+            border: 2px solid #cecfcf;
+            }
+
+      
+    }
+  }
+
 

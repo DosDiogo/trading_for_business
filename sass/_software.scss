@@ -1,3 +1,5 @@
+@import "variables";
+
 /*Seccion Software*/
 .carousel-item{
     height: 90vh;
@@ -9,16 +11,12 @@
     }
 }
 
-
-
 /* Software Page */
 /* container header */
 .t4b-container-head-software{
-    background-color: #c5cdd4;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;    
     min-height: 80vh;
     margin-left: auto;
     margin-right: auto;
@@ -27,6 +25,7 @@
     padding-right: 2rem;
     div{
         text-align: center;
+        
     }
     
     h1{
@@ -35,15 +34,12 @@
         font-size: 2.25rem;
         line-height: 2.5rem;
         padding-bottom: 1.5rem;
-        padding-bottom: 1.5rem;
         background-clip: text;
         background-image: linear-gradient(to right top, #051937, #0c3262, #114d92, #1069c4, #0088f9);
     }   
 
     p{ 
         color: #0d2558;
-        font-size: 1.5rem;
-        line-height: 2rem;
         font-size: 1.25rem;
         line-height: 1.75rem;
         padding-bottom: 2rem;
@@ -52,17 +48,17 @@
 
     }
 
-    .t4b-head-grid-software{
+    .t4b-head-grid-software{        
         text-align: center;
         gap: 2rem;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         display: grid;
         margin-top: 5rem;
-
-        .t4b-cols-grid{            
-        padding: 1.5rem;
-        background-color: #0088f9;
-        border-radius: 1rem;
+        .t4b-cols-grid{
+            
+            padding: 1.5rem;
+            background-color: #0088f9;
+            border-radius: 1rem;
 
         .t4b-cols-num{
             color: #0d2558;
@@ -80,9 +76,18 @@
    
 }
 
+@media (max-width: 640px) {
+    .t4b-container-head-software .t4b-head-grid-software{
+        margin-top: 0.5rem;
+        
+    }
+}
+
+
 @media (min-width: 640px) {
     .t4b-container-head-software .t4b-head-grid-software{
         grid-template-columns: repeat(4, minmax(0, 1fr));
+        
     }
 }
 
@@ -100,5 +105,16 @@
     .t4b-container-head-software h1{
         font-size: 3.75rem;
         line-height: 1;
+    }
+}
+
+.t4b-sesion-video{
+    h2{
+        color: $titulos-h1-p;
+    }
+
+    p{
+        color: $titulos-h1-p;
+        font-size: 1.2rem;
     }
 }

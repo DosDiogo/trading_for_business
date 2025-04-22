@@ -1,0 +1,55 @@
+@import "variables";
+
+.t4b-container-card{
+    h1{ 
+        color: $titulos-h1-p;        
+    }
+    .t4b-sucursales-card{
+        width: 15rem;
+        height: 175px;    
+        padding: 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #FFF;
+        background-clip: border-box;
+        border: 1px solid #0088f9;
+        border-radius:15px;
+        h2{
+            color: #2d83be;
+        }
+
+        .t4b-Boton-sucursales{
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            display: inline-block;    
+            border-radius: 7px;
+            border: 2px solid $titulos-h1-p;
+            color: white;
+            a{
+                text-decoration: none;
+                color: $titulos-h1-p;
+                font-size: 0.9rem;
+                
+            }
+            &:hover{       
+                background-color: #0088f9;
+                border: 2px solid #0d2558;
+                a{
+                    color: #FFF;
+                }            
+            
+            }
+        } 
+    }
+}
+
+.t4b-parafo{
+    font-size: 2rem;
+    color: $titulos-h1-p;
+}

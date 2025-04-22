@@ -1,50 +1,118 @@
+@import "variables";
+
 /*Session footer*/
 /*Redes sociales*/
 
-footer {
+
+.T4BCopyrigth{
+    width: 100%;
+    background-color: #e4e6e6;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #0d2558;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 35px;
+    border-top: solid 1px #0088f9;
+    p{
+        padding-top:9px;
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .T4BCopyrigth{
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+    }
+}
+
+.t4b-footer {
+    padding: 20px;
     margin-top: 30px;
-    background-image: linear-gradient(to right top, #0088f9, #6f9bfa, #9daffb, #c0c5fc, #deddfd, #deddfd, #deddfd, #deddfd, #c0c5fc, #9daffb, #6f9bfa, #0088f9);
+    background-color:#fdfbfb;    
     h2, h3{
         color: #0d2558;
         font-size: 1.5rem;
+        
     }
+
+    p{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #0d2558;
+    }    
 
     .T4bSociales{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        .fa-instagram{
+            color: map-get($redes,instagram-color);
+            
+
+        }
+        .fa-facebook{
+            color: map-get($redes,facebook-color);
+            
+        }
+
+        .fa-linkedin{
+            color: map-get($redes,linkedin-color);
+            
+        }    
+
+        
+        div{
+            width: 50px;           
+            margin: 2px;
+            padding: 0;
+            a i{
+                font-size: 2.8rem;
+                               
+            }
+            i:hover{
+                color: #abacaf;
+            }
+    
+        } 
+        .pading-redes{
+            a i{
+                margin-left: 3px;
+            }
+        }
         
         
     }
+
+    @media screen and (min-width: 600px) {
+        .t4b-footer p{
+            font-size: 1.2rem;
+        }
+    }
+
+
     
     /*whats app style*/
-    ul{
-        list-style-type: none;
-        a{
-            text-decoration: none;
-            color: #0d2558;
-            &:hover{
-                text-decoration: underline;
-            }          
 
-        }
-
-    }   
   
     .container-whapp .fab {
         display: flex;
         align-items: center;
         justify-content: center;
         position: fixed;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         bottom: 10px;
         right: 30px;
         background-color: #25d366;
         color: #FFF;
         border-radius: 50px;
-        font-size: 30px;
+        font-size: 40px;
         z-index: 5;
         &:hover{
             background-color: #08732d;
-
         }    
     }
 
@@ -54,29 +122,10 @@ footer {
         }
     }   
 
-    /* style sesion copyrigth */
+    /* style sesion copyrigth */    
 
-
-    .T4BCopyrigth{
-        text-align: center;
-        font-size: 0.9rem;
-        color: #0d2558;
-        text-transform: uppercase;
-        font-weight: bold;
-        height: 35px;
-        border-top: solid 1px #0088f9;
-        p{
-            padding-top:9px;
-            
-        } 
  
-    }
-
-    @media screen and (max-width: 600px) {
-        .T4BCopyrigth{
-            font-size: 0.5rem;
-            margin-bottom: 20px;
-        }
-    }
 
 }
+
+
